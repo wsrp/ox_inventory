@@ -222,4 +222,18 @@ return {
 		label = 'Scrap Metal',
 		weight = 80,
 	},
+
+	["spray"] = {
+		label = "Spray",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["spray_remover"] = {
+		label = "Spray Remover",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
 }
