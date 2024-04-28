@@ -236,4 +236,20 @@ return {
 		stack = true,
 		close = true,
 	},
+
+	["box"] = {
+		label = "Caixa",
+		weight = 1,
+		stack = false,
+		close = true,
+		consume = 0
+	},
+
+	["briefcase"] = {
+		label = "Briefcase",
+		weight = 1,
+		stack = false,
+		close = true,
+		consume = 0
+	},
 }
