@@ -186,6 +186,13 @@ Item('clothing', function(data, slot)
 	end)
 end)
 
+Item('vehicle_key', function(data, slot)
+	ox_inventory:useItem(data, function(data)
+	  if data then
+		TriggerEvent('ws_vehicles:useKey', data.metadata)
+	  end
+	end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item) return getItem(nil, item) end)

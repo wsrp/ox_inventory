@@ -252,4 +252,12 @@ return {
 		close = true,
 		consume = 0
 	},
+
+	["vehicle_key"] = {
+		label = "Chave",
+		weight = 1,
+		stack = false,
+		close = true,
+		consume = 0
+	},
 }
