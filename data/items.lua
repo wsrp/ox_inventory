@@ -314,7 +314,7 @@ return {
     ["vehicle_key"] = {
         label = "Chave",
         weight = 1,
-        stack = false,
+        stack = true,
         close = true,
         consume = 0
     },
@@ -330,5 +330,10 @@ return {
     ['fita'] = {
         label = 'Fita adesiva',
         weight = 80
+    },
+
+    ['screwdriver'] = {
+        label = 'Chave de fendas',
+        weight = 300
     }
 }
