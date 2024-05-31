@@ -17,6 +17,8 @@
   "ui_ctrl_shift_lmb": "Mova rapidamente meia pilha de itens para outro inventário",
   "ui_alt_lmb": "Uso rápido de um item",
   "ui_ctrl_c": "When hovering over a weapon, copies it's serial number",
+  "ui_remove_ammo": "Remover munição",
+  "ammo_type": "Tipo da munição",
   "$": "R$",
   "male": "Homem",
   "female": "Mulher",
@@ -81,5 +83,10 @@
   "no_durability": "A durabilidade do item está esgotada",
   "cannot_give": "Incapaz de dar %s %s ao alvo",
   "evidence_cannot_take": "Grau não alto o suficiente para tirar da evidência",
-  "dumpster": "Lixeira"
+  "dumpster": "Lixeira",
+  "crafting_item": "Crafting %s",
+  "crafting_bench": "Crafting Bench",
+  "open_crafting_bench": "Open Crafting Bench",
+  "not_enough_durability": "%s não tem durabilidade suficiente",
+  "storage": "Estoque"
 }
