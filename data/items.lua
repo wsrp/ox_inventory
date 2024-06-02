@@ -335,5 +335,17 @@ return {
     ['screwdriver'] = {
         label = 'Chave de fendas',
         weight = 300
+    },
+
+    ['ammo-9mm'] = {
+        label = '9mm',
+        stack = true,
+        weight = 7
+    },
+
+    ['pistol_magazine'] = {
+        label = 'Carregador Pistola',
+        weight = 150,
+        stack = false
     }
 }
