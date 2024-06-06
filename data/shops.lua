@@ -111,6 +111,9 @@ return {
         inventory = {{
             name = 'vehicle_key',
             price = 10
+        }, {
+            name = 'residence_key',
+            price = 10
         }},
         locations = {vec3(1134.04, -469.74, 66.48)},
         targets = {}

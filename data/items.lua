@@ -313,10 +313,20 @@ return {
 
     ["vehicle_key"] = {
         label = "Chave",
-        weight = 1,
+        weight = 23,
         stack = true,
         close = true,
-        consume = 0
+        consume = 0,
+        client = {}
+    },
+
+    ["residence_key"] = {
+        label = "Chave",
+        weight = 30,
+        stack = true,
+        close = true,
+        consume = 0,
+        client = {}
     },
 
     ["grampo"] = {
