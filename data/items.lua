@@ -267,6 +267,83 @@ return {
         consume = 0
     },
 
+    ['mask_1'] = {
+        label = 'Máscara',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['legs_1'] = {
+        label = 'Calça',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['bag_1'] = {
+        label = 'Mochila',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['shoes_1'] = {
+        label = 'Sapato',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['chain_1'] = {
+        label = 'Corrente',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['shirt_1'] = {
+        label = 'Blusa',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['bulletproof_1'] = {
+        label = 'Colete',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['decals_1'] = {
+        label = 'Decalques',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['torso_1'] = {
+        label = 'Jaqueta',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['helmet_1'] = {
+        label = 'Boné',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['glasses_1'] = {
+        label = 'Óculos',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
     ['mastercard'] = {
         label = 'Fleeca Card',
         stack = false,

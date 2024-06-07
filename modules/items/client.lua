@@ -220,6 +220,94 @@ Item('residence_key', function(data, slot)
         end
     end)
 end)
+
+Item('mask_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('legs_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('bag_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('shoes_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('chain_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('shirt_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('bulletproof_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('decals_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('torso_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('helmet_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
+
+Item('glasses_1', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_clothes:useClothe', slot, data.metadata)
+        end
+    end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item)
