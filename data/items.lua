@@ -72,10 +72,6 @@ return {
         }
     },
 
-    ['black_money'] = {
-        label = 'Dirty Money'
-    },
-
     ['burger'] = {
         label = 'Burger',
         weight = 220,
@@ -195,7 +191,13 @@ return {
     },
 
     ['money'] = {
-        label = 'Money'
+        label = 'Money',
+        weight = 1
+    },
+
+    ['black_money'] = {
+        label = 'Dirty Money',
+        weight = 1
     },
 
     ['mustard'] = {
