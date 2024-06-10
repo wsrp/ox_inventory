@@ -18,12 +18,12 @@ shared = {
     playerslots = GetConvarInt('inventory:slots', 50),
     playerweight = GetConvarInt('inventory:weight', 30000),
     target = GetConvarInt('inventory:target', 0) == 1,
-    police = json.decode(GetConvar('inventory:police', '["police", "sheriff"]')),
+    police = json.decode(GetConvar('inventory:police', '["police", "sheriff"]'))
 }
 
 do
     if type(shared.police) == 'string' then
-        shared.police = { shared.police }
+        shared.police = {shared.police}
     end
 
     local police = table.create(0, shared.police and #shared.police or 0)
@@ -61,7 +61,7 @@ if IsDuplicityVersion() then
 				["money", 1, 10],
 				["burger", 1, 1]
 			]
-		]])),
+		]]))
     }
 
     local accounts = json.decode(GetConvar('inventory:accounts', '["money"]'))
@@ -75,7 +75,7 @@ else
     client = {
         autoreload = GetConvarInt('inventory:autoreload', 0) == 1,
         screenblur = GetConvarInt('inventory:screenblur', 1) == 1,
-        keys = json.decode(GetConvar('inventory:keys', '')) or { 'F2', 'K', 'TAB' },
+        keys = json.decode(GetConvar('inventory:keys', '')) or {'F2', 'K', 'TAB'},
         enablekeys = json.decode(GetConvar('inventory:enablekeys', '[249]')),
         aimedfiring = GetConvarInt('inventory:aimedfiring', 0) == 1,
         giveplayerlist = GetConvarInt('inventory:giveplayerlist', 0) == 1,
@@ -87,7 +87,7 @@ else
         dropmodel = joaat(GetConvar('inventory:dropmodel', 'prop_med_bag_01b')),
         weaponmismatch = GetConvarInt('inventory:weaponmismatch', 1) == 1,
         ignoreweapons = json.decode(GetConvar('inventory:ignoreweapons', '[]')),
-        suppresspickups = GetConvarInt('inventory:suppresspickups', 1) == 1,
+        suppresspickups = GetConvarInt('inventory:suppresspickups', 1) == 1
     }
 
     local ignoreweapons = table.create(0, (client.ignoreweapons and #client.ignoreweapons or 0) + 3)
@@ -97,18 +97,24 @@ else
         ignoreweapons[tonumber(weapon) or joaat(weapon)] = true
     end
 
-    ignoreweapons[`WEAPON_UNARMED`] = true
-    ignoreweapons[`WEAPON_HANDCUFFS`] = true
-    ignoreweapons[`WEAPON_GARBAGEBAG`] = true
-    ignoreweapons[`OBJECT`] = true
-    ignoreweapons[`WEAPON_HOSE`] = true
+    if #ignoreweapons > 0 then
+        ignoreweapons[WEAPON_UNARMED] = true
+        ignoreweapons[WEAPON_HANDCUFFS] = true
+        ignoreweapons[WEAPON_GARBAGEBAG] = true
+        ignoreweapons[OBJECT] = true
+        ignoreweapons[WEAPON_HOSE] = true
+    end
 
     client.ignoreweapons = ignoreweapons
 end
 
-function shared.print(...) print(string.strjoin(' ', ...)) end
+function shared.print(...)
+    print(string.strjoin(' ', ...))
+end
 
-function shared.info(...) shared.print('^2[info]^7', ...) end
+function shared.info(...)
+    shared.print('^2[info]^7', ...)
+end
 
 ---Throws a formatted type error.
 ---```lua
@@ -142,7 +148,9 @@ end
 ---@return table
 ---@deprecated
 function data(name)
-    if shared.server and shared.ready == nil then return {} end
+    if shared.server and shared.ready == nil then
+        return {}
+    end
     local file = ('data/%s.lua'):format(name)
     local datafile = LoadResourceFile(shared.resource, file)
     local path = ('@@%s/%s'):format(shared.resource, file)
@@ -178,8 +186,7 @@ if not success then
 end
 
 if not LoadResourceFile(shared.resource, 'web/build/index.html') then
-    return spamError(
-        'UI has not been built, refer to the documentation or download a release build.\n	^3https://overextended.dev/ox_inventory^0')
+    return spamError('UI has not been built, refer to the documentation or download a release build.\n	^3https://overextended.dev/ox_inventory^0')
 end
 
 -- No we're not going to support qtarget any longer.
