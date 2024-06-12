@@ -308,6 +308,22 @@ Item('glasses_1', function(data, slot)
         end
     end)
 end)
+
+Item('drill', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('tools:useDrill')
+        end
+    end)
+end)
+
+Item('c4', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('tools:useC4')
+        end
+    end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item)

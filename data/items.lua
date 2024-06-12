@@ -200,6 +200,18 @@ return {
         weight = 1
     },
 
+    ['drill'] = {
+        label = 'Furadeira',
+        weight = 160,
+        client = {}
+    },
+
+    ['c4'] = {
+        label = 'C4',
+        weight = 160,
+        client = {}
+    },
+
     ['mustard'] = {
         label = 'Mustard',
         weight = 500,
