@@ -448,5 +448,30 @@ return {
         label = 'Carregador Pistola',
         weight = 150,
         stack = false
+    },
+
+    ['bucket'] = {
+        label = 'Balde',
+        weight = 127,
+        stack = true
+    },
+
+    ['terra'] = {
+        label = 'Terra',
+        weight = 990,
+        stack = true
+    },
+
+    ['fertilizer'] = {
+        label = 'Fertilizante',
+        weight = 478,
+        stack = true
+    },
+
+    ['watercan'] = {
+        label = 'Regador',
+        weight = 500,
+        stack = true,
+        client = {}
     }
 }

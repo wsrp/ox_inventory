@@ -324,6 +324,14 @@ Item('c4', function(data, slot)
         end
     end)
 end)
+
+Item('watercan', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_drugs:useWatercan', data)
+        end
+    end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item)
