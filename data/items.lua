@@ -72,10 +72,6 @@ return {
         }
     },
 
-    ['black_money'] = {
-        label = 'Dirty Money'
-    },
-
     ['burger'] = {
         label = 'Burger',
         weight = 220,
@@ -195,7 +191,25 @@ return {
     },
 
     ['money'] = {
-        label = 'Money'
+        label = 'Money',
+        weight = 1
+    },
+
+    ['black_money'] = {
+        label = 'Dirty Money',
+        weight = 1
+    },
+
+    ['drill'] = {
+        label = 'Furadeira',
+        weight = 160,
+        client = {}
+    },
+
+    ['c4'] = {
+        label = 'C4',
+        weight = 160,
+        client = {}
     },
 
     ['mustard'] = {
@@ -267,16 +281,84 @@ return {
         consume = 0
     },
 
-    ['mastercard'] = {
-        label = 'Fleeca Card',
-        stack = false,
-        weight = 10,
-        client = {
-            image = 'card_bank.png'
-        }
+    ['mask_1'] = {
+        label = 'Máscara',
+        consume = 0,
+        weight = 50,
+        client = {}
     },
 
-    ['creditcard'] = {
+    ['legs_1'] = {
+        label = 'Calça',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['bag_1'] = {
+        label = 'Mochila',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['shoes_1'] = {
+        label = 'Sapato',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['chain_1'] = {
+        label = 'Corrente',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['shirt_1'] = {
+        label = 'Blusa',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['bulletproof_1'] = {
+        label = 'Colete',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['decals_1'] = {
+        label = 'Decalques',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['torso_1'] = {
+        label = 'Jaqueta',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['helmet_1'] = {
+        label = 'Boné',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['glasses_1'] = {
+        label = 'Óculos',
+        consume = 0,
+        weight = 50,
+        client = {}
+    },
+
+    ['mastercard'] = {
         label = 'Fleeca Card',
         stack = false,
         weight = 10,
@@ -318,6 +400,78 @@ return {
         stack = false,
         close = true,
         consume = 0
-    }
+    },
 
+    ["vehicle_key"] = {
+        label = "Chave",
+        weight = 23,
+        stack = true,
+        close = true,
+        consume = 0,
+        client = {}
+    },
+
+    ["residence_key"] = {
+        label = "Chave",
+        weight = 30,
+        stack = true,
+        close = true,
+        consume = 0,
+        client = {}
+    },
+
+    ["grampo"] = {
+        label = "Grampo",
+        weight = 1,
+        stack = true,
+        close = true,
+        client = {}
+    },
+
+    ['fita'] = {
+        label = 'Fita adesiva',
+        weight = 80
+    },
+
+    ['screwdriver'] = {
+        label = 'Chave de fendas',
+        weight = 300
+    },
+
+    ['ammo-9mm'] = {
+        label = '9mm',
+        stack = true,
+        weight = 7
+    },
+
+    ['pistol_magazine'] = {
+        label = 'Carregador Pistola',
+        weight = 150,
+        stack = false
+    },
+
+    ['bucket'] = {
+        label = 'Balde',
+        weight = 127,
+        stack = true
+    },
+
+    ['terra'] = {
+        label = 'Terra',
+        weight = 990,
+        stack = true
+    },
+
+    ['fertilizer'] = {
+        label = 'Fertilizante',
+        weight = 478,
+        stack = true
+    },
+
+    ['watercan'] = {
+        label = 'Regador',
+        weight = 500,
+        stack = true,
+        client = {}
+    }
 }

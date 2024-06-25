@@ -58,6 +58,12 @@ const InventoryContext: React.FC = () => {
       case 'removeAmmo':
         fetchNui('removeAmmo', item.slot);
         break;
+      case 'removeMagazine':
+        fetchNui('removeMagazine', item.slot);
+        break;
+      case 'removeMagazineAmmo':
+        fetchNui('removeMagazineAmmo', item.slot);
+        break;
       case 'copy':
         setClipboard(data.serial || '');
         break;
@@ -95,8 +101,14 @@ const InventoryContext: React.FC = () => {
         <MenuItem onClick={() => handleClick({ action: 'use' })} label={Locale.ui_use || 'Use'} />
         <MenuItem onClick={() => handleClick({ action: 'give' })} label={Locale.ui_give || 'Give'} />
         <MenuItem onClick={() => handleClick({ action: 'drop' })} label={Locale.ui_drop || 'Drop'} />
-        {item && item.metadata?.ammo > 0 && (
+        {item && item.metadata?.ammo > 0 && !item.metadata?.magazine && item.metadata?.magazine !== '' && (
           <MenuItem onClick={() => handleClick({ action: 'removeAmmo' })} label={Locale.ui_remove_ammo} />
+        )}
+        {item && item.metadata?.magazine && item.metadata?.magazine !== '' && (
+          <MenuItem onClick={() => handleClick({ action: 'removeMagazine' })} label='Retirar carregador' />
+        )}
+        {item && item.metadata?.ammoCount > 0 && (
+          <MenuItem onClick={() => handleClick({ action: 'removeMagazineAmmo' })} label={Locale.ui_remove_ammo} />
         )}
         {item && item.metadata?.serial && (
           <MenuItem

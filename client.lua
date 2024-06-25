@@ -1586,7 +1586,8 @@ end)
 
 RegisterNUICallback('removeAmmo', function(slot, cb)
 	cb(1)
-	local slotData = PlayerData.inventory[slot]
+	TriggerEvent('ws_weapons:removeAmmo', slot)
+	--[[local slotData = PlayerData.inventory[slot]
 
 	if not slotData or not slotData.metadata.ammo or slotData.metadata.ammo == 0 then return end
 
@@ -1594,7 +1595,17 @@ RegisterNUICallback('removeAmmo', function(slot, cb)
 
 	if success and slot == currentWeapon?.slot then
 		SetPedAmmo(playerPed, currentWeapon.hash, 0)
-	end
+	end]]
+end)
+
+RegisterNUICallback('removeMagazine', function(slot, cb)
+	cb(1)
+	TriggerEvent('ws_weapons:removeMagazine', slot)
+end)
+
+RegisterNUICallback('removeMagazineAmmo', function(slot, cb)
+	cb(1)
+	TriggerEvent('ws_weapons:removeMagazineAmmo', slot)
 end)
 
 RegisterNUICallback('useItem', function(slot, cb)
