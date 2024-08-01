@@ -340,6 +340,14 @@ Item('watercan', function(data, slot)
         end
     end)
 end)
+
+Item('mastercard', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_bank:useCard', data.metadata)
+        end
+    end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item)
