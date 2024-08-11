@@ -348,6 +348,14 @@ Item('mastercard', function(data, slot)
         end
     end)
 end)
+
+Item('eod', function(data, slot)
+    ox_inventory:useItem(data, function(data)
+        if data then
+            TriggerEvent('ws_police:useEod')
+        end
+    end)
+end)
 -----------------------------------------------------------------------------------------------
 
 exports('Items', function(item)

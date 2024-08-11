@@ -473,5 +473,12 @@ return {
         weight = 500,
         stack = true,
         client = {}
+    },
+
+    ['eod'] = {
+        label = 'EOD',
+        weight = 10000,
+        stack = false,
+        client = {}
     }
 }
