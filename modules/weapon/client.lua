@@ -35,7 +35,7 @@ function Weapon.Equip(item, data, noWeaponAnim)
 
         sleep = anim and anim[3] or 1200
 
-        exports['ws_weapons']:equipWeapon(data)
+        -- exports['ws_weapons']:equipWeapon(data)
 
         -- Utils.PlayAnimAdvanced(sleep, anim and anim[1] or 'reaction@intimidation@1h', anim and anim[2] or 'intro', coords.x, coords.y, coords.z, 0, 0, GetEntityHeading(playerPed),
         --  8.0, 3.0, sleep * 2, 50, 0.1)
@@ -131,7 +131,7 @@ function Weapon.Disarm(currentWeapon, noAnim)
 
             local sleep = anim and anim[6] or 1400
 
-            exports['ws_weapons']:unequipWeapon(currentWeapon)
+            -- exports['ws_weapons']:unequipWeapon(currentWeapon)
 
             -- Utils.PlayAnimAdvanced(sleep, anim and anim[4] or 'reaction@intimidation@1h', anim and anim[5] or 'outro', coords.x, coords.y, coords.z, 0, 0,
             --   GetEntityHeading(cache.ped), 8.0, 3.0, sleep, 50, 0)

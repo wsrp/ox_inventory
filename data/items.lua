@@ -444,8 +444,38 @@ return {
         weight = 7
     },
 
+    ['ammo-45mm'] = {
+        label = '45mm',
+        stack = true,
+        weight = 7
+    },
+
+    ['ammo-12'] = {
+        label = '12',
+        stack = true,
+        weight = 7
+    },
+
+    ['ammo-556'] = {
+        label = '5.56',
+        stack = true,
+        weight = 7
+    },
+
     ['pistol_magazine'] = {
         label = 'Carregador Pistola',
+        weight = 150,
+        stack = false
+    },
+
+    ['smg_magazine'] = {
+        label = 'Carregador SMG',
+        weight = 150,
+        stack = false
+    },
+
+    ['carbine_magazine'] = {
+        label = 'Carregador Carbine',
         weight = 150,
         stack = false
     },
