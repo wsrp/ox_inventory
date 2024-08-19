@@ -510,5 +510,10 @@ return {
         weight = 10000,
         stack = false,
         client = {}
-    }
+    },
+
+    ['chips'] = {
+        label = 'Fichas',
+        weight = 0.1
+    },
 }
